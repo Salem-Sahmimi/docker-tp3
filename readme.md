@@ -11,33 +11,13 @@ Ce TP a pour but de mettre en place une architecture web simple basée sur Docke
 ## 🏗️ Architecture
 Navigateur → Nginx (HTTP) → PHP-FPM (SCRIPT) → MariaDB (DATA)
 
-## 📁 Structure du projet
-docker-tp3/
-├── etape1/
-├── etape2/
-│ ├── config/
-│ │ └── default.conf
-│ ├── initdb/
-│ │ └── create.sql
-│ ├── src/
-│ │ ├── index.php
-│ │ └── test.php
-│ ├── Dockerfile
-│ └── launch.sh
-├── etape3/
-│ └── docker-compose.yml
-└── README.md
-
-shell
-Copier le code
 
 ## 🚀 Lancement des étapes
 ### Étape 1 et 2 (sans Docker Compose)
 chmod +x launch.sh
 ./launch.sh
 
-bash
-Copier le code
+
 Puis ouvrir dans un navigateur :
 - http://localhost:8080/
 - http://localhost:8080/test.php (étape 2)
@@ -45,8 +25,7 @@ Puis ouvrir dans un navigateur :
 ### Étape 3 (avec Docker Compose)
 docker compose up --build
 
-markdown
-Copier le code
+
 Accès identique :
 - http://localhost:8080/
 - http://localhost:8080/test.php
